@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="mytext">Hello User</string>
+    <string name="newtext">That is pretty interesting</string>
+</resources>
