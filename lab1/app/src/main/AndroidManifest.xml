@@ -11,14 +11,14 @@
         android:theme="@style/Theme.MyApplication">
         <activity
             android:name=".MainActivity3"
+            android:exported="true"
             android:label="Hello activity 3 here"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/MyThemeHolo"
-            android:exported="true" />
+            android:theme="@style/MyThemeHolo" />
         <activity
             android:name=".MainActivity2"
-            android:theme="@style/MyThemeDevuceDefault"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/MyThemeDevuceDefault" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
