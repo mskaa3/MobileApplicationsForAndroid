@@ -1,6 +1,5 @@
 package com.example.mainactivity;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,8 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class SimpleList extends AppCompatActivity implements AdapterView.OnItemClickListener{
-    String[] inMyList={
+import com.example.mainactivity.custom.CustomAdapter;
+
+public class customActivity extends AppCompatActivity {
+
+    String[] titles={
             "item1",
             "item2",
             "item3",
@@ -28,20 +30,33 @@ public class SimpleList extends AppCompatActivity implements AdapterView.OnItemC
             "item15",
 
     };
+    String[] subtitles={
+            "111",
+            "222",
+            "333",
+            "444",
+            "555",
+            "666",
+            "777",
+            "888",
+            "999",
+            "1010",
+            "1111",
+            "1212",
+            "1313",
+            "1414",
+            "1515",
+
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_simple_list);
+        setContentView(R.layout.activity_custom);
 
-        ArrayAdapter<String> array=new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
-        array.addAll(inMyList);
-        ListView list_view=findViewById(R.id.mySimpleList);
-        list_view.setAdapter(array);
-        list_view.setOnItemClickListener(this);
-    }
-    @Override
-    public void onItemClick(AdapterView adapterView, View view, int x, long z){
-        Toast.makeText(this,inMyList[x],Toast.LENGTH_SHORT).show();
+        CustomAdapter adapter=new CustomAdapter(titles,subtitles,this);
+        ListView list_view=(ListView) findViewById(R.id.customList);
+        list_view.setAdapter(adapter);
+
     }
 
     @Override

@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/Documents/GitHub/AndroidStudioProjects/lab2/app/src/main/res/layout/activity_custom.xml" value="0.2674772036474164" />
+        <entry key="..\:/Users/Asus/Documents/GitHub/AndroidStudioProjects/lab2/app/src/main/res/layout/activity_grid.xml" value="0.2105978260869565" />
         <entry key="..\:/Users/Asus/Documents/GitHub/AndroidStudioProjects/lab2/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/Asus/Documents/GitHub/AndroidStudioProjects/lab2/app/src/main/res/layout/activity_multiple_choice_list.xml" value="0.2105978260869565" />
         <entry key="..\:/Users/Asus/Documents/GitHub/AndroidStudioProjects/lab2/app/src/main/res/layout/activity_simple_list.xml" value="0.221875" />
+        <entry key="..\:/Users/Asus/Documents/GitHub/AndroidStudioProjects/lab2/app/src/main/res/layout/list_row.xml" value="0.5" />
       </map>
     </option>
   </component>
