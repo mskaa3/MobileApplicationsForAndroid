@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.mainactivity.R;
 
@@ -46,6 +47,12 @@ public class avatarGridAdapter extends BaseAdapter {
 
         }
         view.setImageResource(images[position]);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "Avatar num: "+position, Toast.LENGTH_SHORT).show();
+            }
+        });
         return view;
     }
 }
