@@ -50,7 +50,8 @@ public class avatarGridAdapter extends BaseAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Avatar num: "+position, Toast.LENGTH_SHORT).show();
+                int num=position+1;
+                Toast.makeText(context, "Avatar num: "+num, Toast.LENGTH_SHORT).show();
             }
         });
         return view;

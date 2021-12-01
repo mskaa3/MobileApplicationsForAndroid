@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/act1"
+            android:icon="@drawable/ic_baseline_favorite_border_24"
+            android:title="@string/activity_1"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/act2"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/activity_2"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/act3"
+            android:icon="@drawable/ic_baseline_filter_hdr_24"
+            android:title="@string/activity_3"/>
+    </group>
+
+
+</menu>
