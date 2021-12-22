@@ -11,7 +11,7 @@ public class MyRepository {
     public MyRepository(Application context) {
         db = MyDB.getDatabase(context);
         myDao = db.myDao();
-//dataList = myDao.getAllData(); // alternatively
+
     }
     public static List<ItemData> getDataList() {
         dataList = myDao.getAllData();

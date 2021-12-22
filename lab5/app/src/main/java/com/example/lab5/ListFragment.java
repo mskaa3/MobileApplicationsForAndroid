@@ -43,17 +43,20 @@ public class ListFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
+
     public void onAttach(Context context) {
         super.onAttach(context);
-        if( (context instanceof ListFragmentInteractionListener))
+        if ((context instanceof ListFragmentInteractionListener))
             mListener = (ListFragmentInteractionListener) context;
         else
             throw new RuntimeException(context.toString() + "must implement ListFragmentInteractionListener");
     }
+
     public void onDetach() {
         super.onDetach();
         mListener = null;
     }
+
     void setList(List<ItemData> list) {
         mAdapter.setItemList(list);
     }
@@ -82,5 +85,13 @@ public class ListFragment extends Fragment {
         return view;
     }
 
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
+        mAdapter = new MyRVAdapter(mListener);
+        mRecyclerView.setAdapter(mAdapter);
+        setList(mListener.getRepositoryList());
+
+
+    }
 }

@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.lab5.placeholder.PlaceholderContent.PlaceholderItem;
-import com.example.lab5.databinding.ListItemBinding;
+
 
 import java.util.List;
 
@@ -38,13 +38,15 @@ public class MyRVAdapter extends RecyclerView.Adapter<MyRVAdapter.MyViewHolder> 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         holder.mItem = mList.get(position);
+
         holder.mTxtMain.setText(holder.mItem.txtMain);
         holder.mTxt2.setText(holder.mItem.txtSecond);
         boolean sex = holder.mItem.gender;
         if (sex)
-            holder.mImage.setImageResource(R.drawable.ic_baseline_face_24);
-        else
             holder.mImage.setImageResource(R.drawable.ic_baseline_support_agent_24);
+
+        else
+            holder.mImage.setImageResource(R.drawable.ic_baseline_face_24);
         int rating = holder.mItem.rating;
         if (rating>3)
             holder.mImage2.setImageResource(R.drawable.ic_baseline_emoji_emotions_24);
