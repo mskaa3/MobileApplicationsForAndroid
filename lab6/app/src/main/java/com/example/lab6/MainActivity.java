@@ -118,7 +118,7 @@ public void recordMediaPlayer(){
      mediaRecord.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
      mediaRecord.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
      String dirPath=getApplicationContext().getFilesDir().toString();
-     mediaRecord.setOutputFile(dirPath+"/newRecord.mp4");
+     mediaRecord.setOutputFile(dirPath+"/newRecord4.mp4");
         try {
             mediaRecord.prepare();
             mediaRecord.start();
